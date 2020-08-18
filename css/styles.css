@@ -1,0 +1,29 @@
+/* Приминение главного цвета ко всей страницы */
+body {
+	background-color: #ffffff;
+	color: #212121;
+}
+.web-studio {
+	color: blue;
+}
+body {
+	font-family: Roboto;
+}
+.button {
+	color: #ffffff;
+	background-color: #2196f3;
+}
+/*Цвета тексата, палитра
+(#FFFFFF;#212121;#757575;#2196F3;rgba(255, 255, 255, 0.6)*/
+
+/* Цвет фона
+#2F303A;#F5F4FA */
+
+/* убираем точки (списки) */
+ul {
+	list-style: none;
+}
+/* site-nav */
+.site-nav {
+	color: #2196f3;
+}
