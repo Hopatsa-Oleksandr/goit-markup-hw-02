@@ -3,11 +3,33 @@ body {
 	background-color: #ffffff;
 	color: #212121;
 }
-.web-studio {
-	color: blue;
-}
 body {
 	font-family: Roboto;
+}
+/* WebStudio */
+.logo-white .web {
+	color: blue;
+	font-family: Raleway;
+	font-size: 26px;
+}
+.logo-white a {
+	color: #ffffff;
+	font-family: Raleway;
+	font-size: 26px;
+}
+
+.logo-black .web {
+	color: blue;
+	font-family: Raleway;
+	font-size: 26px;
+}
+.logo-black a {
+	color: #212121;
+	font-family: Raleway;
+	font-size: 26px;
+}
+.site-nav a {
+	font-size: 14px;
 }
 .button {
 	color: #ffffff;
@@ -24,6 +46,63 @@ ul {
 	list-style: none;
 }
 /* site-nav */
-.site-nav {
+.site-nav .link {
 	color: #2196f3;
+	font-size: 14px;
+}
+.site-nav a {
+	color: #212121;
+	font-size: 14px;
+}
+.site-nav a:hover {
+	color: #212121;
+}
+.site-nav a:focus {
+	color: #212121;
+}
+/* contacts-nav */
+.contacts-nav .tel {
+	color: #2196f3;
+	font-size: 14px;
+	font-style: normal;
+}
+.contacts-nav .mailto {
+	color: #757575;
+	font-size: 14px;
+	font-style: normal;
+}
+/* Кнопка; Главаная надпись; заголовоки */
+.home-title h1 {
+	color: #000000;
+	font-size: 44px;
+}
+.section-heading {
+	color: #212121;
+	font-size: 36px;
+}
+/* Основные цвета шрифтов */
+.section-title {
+	color: #212121;
+	font-size: 16px;
+}
+.section-secondary {
+	color: #757575;
+	font-size: 16px;
+}
+/* Белый шрифт */
+/*.white-color {
+	color: #ffffff;}*/
+.white-color {
+	color: #000000;
+	font-size: 14px;
+	font-style: normal;
+}
+/* footer */
+/*.footer-contacts a {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 14px;}*/
+.footer-contacts a {
+	color: #000000;
+	font-size: 14px;
+	font-style: normal;
 }
