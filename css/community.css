@@ -20,15 +20,6 @@
 	font-family: Raleway;
 	font-size: 26px;
 }
-.button {
-	color: #ffffff;
-	background-color: #2196f3;
-	display: inline-block;
-	padding: 6px 18px;
-	border: 1px solid black;
-	border-color: transparent;
-}
-
 /* site-nav */
 .site-nav .link {
 	color: var(--primary-text-color);
@@ -40,10 +31,6 @@
 .site-nav .link:focus {
 	color: var(--accent-color);
 }
-/* Текущая ссылка при нажатом состоянии оставляет другой цвет */
-/*.site-nav .link.current {
-	color: var(--accent-color);
-}*/
 /* contacts-nav */
 .contacts-nav .contacts {
 	color: var(--title-text-color);
@@ -53,21 +40,26 @@
 .contacts-nav .contacts:hover {
 	color: var(--accent-color);
 }
-/* Кнопка; Главаная надпись; заголовоки */
-.home-title h1 {
-	color: #000000;
-	font-size: 44px;
+.menu .information {
+	color: #212121;
+	background-color: #f5f4fa;
+	display: inline-block;
+	padding: 6px 18px;
+	border-radius: 4px solid black;
+	border-color: transparent;
 }
-.section-heading {
+.menu .information:hover {
+	background-color: var(--accent-color);
+}
+.menu .information:focus {
+	color: #ffffff;
+	background-color: var(--accent-color);
+}
+.section .list {
 	color: var(--primary-text-color);
-	font-size: 36px;
+	font-size: 18px;
 }
-/* Основные цвета шрифтов */
-.section-title {
-	color: var(--primary-text-color);
-	font-size: 16px;
-}
-.section-secondary {
+.section .services {
 	color: var(--title-text-color);
 	font-size: 16px;
 }
