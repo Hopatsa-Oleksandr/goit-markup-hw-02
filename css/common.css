@@ -5,13 +5,15 @@
 	--accent-color: #2196f3;
 }
 /* Приминение главного цвета ко всей страницы */
-body {
+.page-studio {
 	background-color: #ffffff;
-	color: #212121;
+	color: var(primary-text-color);
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-style: normal;
 }
-body {
-	font-family: Roboto;
-}
+
 /*Цвета тексата, палитра
 (#FFFFFF;#212121;#757575;#2196F3;rgba(255, 255, 255, 0.6)*/
 
