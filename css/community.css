@@ -1,34 +1,78 @@
-/* Верхний логотип */
-.logo .logo-part-one {
-	color: var(--accent-color);
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-}
-.logo {
-	color: #000000;
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	text-decoration: none;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-/* page-studio */
+/* Общий контейнер */
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	color: var(--primary-text-color);
+	letter-spacing: 0.03em;
+}
+/* <!--Верхняя линия💪--> */
+.section-header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1600px;
+}
+.page-header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.page-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
+}
+.logo {
+	margin-right: 93px;
+	color: var(--primary-text-color);
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: none;
+	text-align: start;
+}
+.logo-part-one {
+	color: var(--accent-color);
+
+	font-weight: bold;
+	line-height: 31px;
+}
+.studio-list {
+	letter-spacing: 0.02em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
+}
+
+.studio-list-item .link {
+	text-decoration: none;
+	margin-right: 50px;
+	color: var(--primary-text-color);
+}
 .page-studio .link {
 	color: var(--primary-text-color);
-	font-weight: 500;
-	font-size: 14px;
-	font-style: normal;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	font-family: Roboto, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
 }
 .page-studio .link:hover {
 	color: var(--accent-color);
@@ -36,69 +80,125 @@
 .page-studio .link:focus {
 	color: var(--accent-color);
 }
-/* contacts-nav */
-.page-contacts-list .contacts {
-	color: var(--primary-text-color);
-	background-color: #ffffff;
+
+/* контакты */
+.studio-contacts-list {
+	letter-spacing: 0.02em;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+}
+.studio-contacts-list .link {
+	color: var(--title-text-color);
+
 	font-weight: 500;
 	line-height: 1.14;
-	letter-spacing: 0.02em;
 	text-decoration: none;
 }
-.page-contacts-list .contacts:hover {
-	color: var(--accent-color);
+.studio-list-item:not(:last-child),
+.studio-contacts-item:not(:last-child) {
+	margin-right: 50px;
 }
-/* site-nav */
-.site-nav .link {
-	color: var(--primary-text-color);
-	font-size: 14px;
-}
-.site-nav .link:hover {
-	color: var(--accent-color);
-}
-.site-nav .link:focus {
-	color: var(--accent-color);
-}
-/* contacts-nav */
-.contacts-nav .contacts {
-	color: var(--title-text-color);
-	font-size: 14px;
-	font-style: normal;
-}
-.contacts-nav .contacts:hover {
+.studio-contacts-list .link:hover {
 	color: var(--accent-color);
 }
 /* Фильтр-кнопки */
-.filter .filter-button {
-	color: var(--primary-text-color);
+/* Заголовок Портфолио скрываем белым цветом */
+.section-portfolio h1 {
+	color: #ffffff;
+}
+.section-portfolio h1 {
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	letter-spacing: 0.03em;
+}
+.section-portfolio {
+	padding-top: 70px;
+	padding-bottom: 94px;
+}
+.portfolio-filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	margin-bottom: 34px;
+	padding-bottom: 16px;
+	text-align: center;
+}
+.filter-button {
 	background-color: #f5f4fa;
+	margin-right: 8px;
+	padding: 6px 22px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.62;
 	letter-spacing: 0.03em;
-	text-align: center;
 	border: none;
 	font-family: inherit;
 	border-radius: 4px;
+	border: none;
+	-webkit-appearance: button;
+	text-transform: none;
 }
 
-.filter .filter-button:hover {
+.filter-button:hover {
 	color: #ffffff;
 	background-color: var(--accent-color);
 }
-.filter .filter-button:focus {
+.filter-button:focus {
 	color: #ffffff;
 	background-color: var(--accent-color);
 }
-.section .list {
-	color: var(--primary-text-color);
-	font-size: 18px;
-	font-weight: bold;
+/* Проект */
+.portfolio-item {
+	flex-wrap: wrap;
+	margin: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-.section .services {
+.portfolio-card {
+	width: 370px;
 	color: var(--title-text-color);
+}
+.portfolio-card-caption {
+	padding: 20px 24px;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+	text-align: left;
+	margin: 0px;
+}
+
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+	margin-bottom: 30px;
+}
+.portfolio-card:not(:nth-child(3n)) {
+	margin-right: 30px;
+}
+.portfolio-title {
+	margin-bottom: 4px;
+	color: var(--primary-text-color);
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+.filter-item {
+	color: var(--text-main);
+	font-weight: 400;
 	font-size: 16px;
-	font-weight: normal;
+	line-height: 1.87;
+	margin: 0px;
+	box-sizing: border-box;
+	text-align: left;
+	list-style: none;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	letter-spacing: 0.03em;
 }
 /* Нижний логотип */
 .footer .logo-part-two {
@@ -121,36 +221,47 @@
 	letter-spacing: 0.03em;
 	text-decoration: none;
 }
-.footer {
-	background-color: #000000;
+/* Подвал страницы 😃 📱 ✉️ */
+.section-footer .logo {
+	display: block;
+	margin-bottom: 20px;
 }
-/* footer */
-#contacts .footer-contacts {
+.section-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: start;
+	background-color: #2f303a;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo-part-one {
+	color: var(--accent-color);
+}
+.logo-part-two {
 	color: #ffffff;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
 }
+/* Адрес */
 .adress-mail {
-	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
+	margin-bottom: 9px;
+	margin-top: 0px;
+	color: #ffffff;
 	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
-	text-decoration: none;
+	text-align: start;
 }
+.adress-email,
 .adress-tel {
+	display: block;
+
 	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
+	text-align: start;
 	text-decoration: none;
 }
-.adress-tel:hover {
-	color: var(--accent-color);
-}
-.adress-mail:hover {
-	color: var(--accent-color);
+.adress-email {
+	margin-bottom: 9px;
 }

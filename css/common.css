@@ -4,23 +4,8 @@
 	--title-text-color: #757575;
 	--accent-color: #2196f3;
 }
-/* Приминение главного цвета ко всей страницы */
-.page-studio {
-	background-color: #ffffff;
-	color: var(primary-text-color);
-	margin: 0;
-	font-family: Roboto, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-}
 
-/*Цвета тексата, палитра
-(#FFFFFF;#212121;#757575;#2196F3;rgba(255, 255, 255, 0.6)*/
-
-/* Цвет фона
-#2F303A;#F5F4FA */
-
-/* убираем точки (списки) */
 ul {
 	list-style: none;
+	padding: 0;
 }

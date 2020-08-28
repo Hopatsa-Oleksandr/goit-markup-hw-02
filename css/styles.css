@@ -1,160 +1,303 @@
-/* Верхний логотип */
-.logo .logo-part-one {
-	color: var(--accent-color);
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
+/* *,
+*::after,
+*::before {
+	box-sizing: border-box;
+} */
+/* box-sizing: inherit; */
+
+/* <!--Верхняя линия💪--> */
+.section-header {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1600px;
+}
+.page-header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.page-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
 }
 .logo {
-	color: #000000;
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
+	margin-right: 93px;
+	color: var(--primary-text-color);
+	font-family: Raleway, sans-serif;
+	font-weight: 700;
 	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
+	line-height: 1.19;
 	text-decoration: none;
+	text-align: start;
+}
+.logo-part-one {
+	color: var(--accent-color);
+
+	font-weight: bold;
+	line-height: 31px;
+}
+.studio-list {
+	letter-spacing: 0.02em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
 }
 
-/* page-studio */
+.studio-list-item .link {
+	text-decoration: none;
+	margin-right: 50px;
+	color: var(--primary-text-color);
+}
 .page-studio .link {
 	color: var(--primary-text-color);
-	font-weight: 500;
-	font-size: 14px;
-	font-style: normal;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	font-family: Roboto, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
 }
-/*Этот псевдокласс активируется на ссылках, которые уже были посещены. По умолчанию ссылки отображаются синими и при посещении становятся фиолетовыми.
-.page-studio .link:visited {
-	color: green;
-}  */
-
 .page-studio .link:hover {
 	color: var(--accent-color);
 }
 .page-studio .link:focus {
 	color: var(--accent-color);
 }
+
 /* контакты */
-.page-contacts-list .contacts {
-	color: var(--primary-text-color);
-	background-color: #ffffff;
+.studio-contacts-list {
+	letter-spacing: 0.02em;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+}
+.studio-contacts-list .link {
+	color: var(--title-text-color);
+
 	font-weight: 500;
 	line-height: 1.14;
-	letter-spacing: 0.02em;
 	text-decoration: none;
 }
-.page-contacts-list .contacts:hover {
+.studio-list-item:not(:last-child),
+.studio-contacts-item:not(:last-child) {
+	margin-right: 50px;
+}
+.studio-contacts-list .link:hover {
 	color: var(--accent-color);
 }
-/* Кнопка; Главаная надпись; заголовоки */
-.primary {
-	background-color: #000000;
+/* Шапка */
+.section-primary {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 200px 452px;
+	text-align: center;
+	width: 1600px;
+	background-color: #2f303a;
 }
-.primary .primary-title {
+.primary-title {
+	margin-bottom: 30;
+	margin-top: 0;
+
+	font-family: Roboto, sans-serif;
+	font-style: normal;
 	color: #ffffff;
-	font-size: 44px;
 	font-weight: 900;
+	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
-	text-align: center;
+
 	text-transform: uppercase;
 }
-.primary .primary-button {
+/* Кнопка */
+.primary-button {
+	margin-top: 30;
 	color: #ffffff;
+	padding: 10px 32px;
 	background-color: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+	border: transparent;
 	width: 200px;
 	height: 50px;
-	left: 700px;
-	top: 430px;
-}
-.activity .activity-title {
-	color: var(--primary-text-color);
-	font-size: 36px;
-	font-weight: bold;
-	line-height: 1.16;
-	letter-spacing: 0.03em;
 	text-align: center;
+	letter-spacing: 0.06em;
+	font-style: normal;
+	font-size: 16px;
 }
-.team .team-title {
-	color: var(--primary-text-color);
-	font-size: 36px;
-	font-weight: bold;
-	line-height: 1.16;
-	letter-spacing: 0.03em;
+
+/* Особенности */
+.section-features .section-title {
+	margin: 0;
+	color: #ffffff;
+}
+.section-features {
+	padding-top: 53px;
+	padding-bottom: 94px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
 	text-align: center;
-}
-/* Основные цвета шрифтов */
-.section {
-	line-height: 1.14;
-	letter-spacing: 0.03em;
-	font-weight: bold;
-}
-.section-title {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-size: 14px;
 	color: var(--primary-text-color);
+	letter-spacing: 0.03em;
 }
-.section-secondary {
-	font-weight: normal;
+.features-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px;
+	list-style: none;
+	box-sizing: border-box;
 	color: var(--title-text-color);
 }
-/* Нижний логотип */
-.footer .logo-part-two {
-	color: #2196f3;
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	text-decoration: none;
-}
-.logo-two {
-	color: #ffffff;
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	text-decoration: none;
-}
-.footer {
-	background-color: #000000;
-}
-/* footer */
-#contacts .footer-contacts {
-	color: #ffffff;
-	font-style: normal;
-	font-weight: 400;
+.features-card {
+	width: 270px;
 	line-height: 1.71;
+	color: var(--title-text-color);
+}
+.features-item {
+	padding-bottom: 10px;
+
+	color: var(--primary-text-color);
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	margin: 0px;
+	box-sizing: border-box;
+	text-align: start;
+	list-style: none;
+	font-family: Roboto, sans-serif;
+	font-style: normal;
 	letter-spacing: 0.03em;
 }
+.features-text {
+	margin: 0px;
+	box-sizing: border-box;
+	text-align: start;
+	color: var(--title-text-color);
+}
+/* Чем мы занимаемся */
+.section-activity {
+	padding-bottom: 94px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section-activity .section-title {
+	margin-bottom: 50px;
+}
+.section-title {
+	margin: 0;
+	margin-bottom: 50px;
+	font-size: 36px;
+	line-height: 1.16;
+	font-weight: bold;
+}
+.activity-card {
+	width: 370px;
+	height: 294px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.activity-list {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	color: var(--title-text-color);
+}
+
+/* Наша команда */
+.section-team {
+	background: #f5f4fa;
+	width: 1600px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.team-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0px;
+	color: var(--title-text-color);
+}
+.team-card {
+	width: 270px;
+	height: 368px;
+	background-color: #ffffff;
+	border-radius: 0px 0px 4px 4px;
+	color: var(--title-text-color);
+}
+.team-card-caption {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: var(--title-text-color);
+}
+.team-caption {
+	margin-bottom: 10px;
+	color: var(--primary-text-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.19;
+}
+/* Подвал страницы 😃 📱 ✉️ */
+.section-footer .logo {
+	display: block;
+	margin-bottom: 20px;
+}
+.section-footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	text-align: start;
+	background-color: #2f303a;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logo-part-one {
+	color: var(--accent-color);
+}
+.logo-part-two {
+	color: #ffffff;
+}
+/* Адрес */
 .adress-mail {
-	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
+	margin-bottom: 9px;
+	margin-top: 0px;
+	color: #ffffff;
 	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
-	text-decoration: none;
+	text-align: start;
 }
+.adress-email,
 .adress-tel {
+	display: block;
+
 	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
+	text-align: start;
 	text-decoration: none;
 }
-.adress-tel:hover {
-	color: var(--accent-color);
-}
-.adress-mail:hover {
-	color: var(--accent-color);
+.adress-email {
+	margin-bottom: 9px;
 }
